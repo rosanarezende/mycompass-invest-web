@@ -37,7 +37,30 @@ cp .env.local.example .env.local
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+The development server will start on [http://localhost:3000](http://localhost:3000) (or next available port).
+
+## Tech Stack
+
+### 🚀 **Core Framework**
+- **Next.js 14**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **React 18**: Latest React features
+
+### 🎨 **UI & Styling**  
+- **Tailwind CSS**: Utility-first CSS framework
+- **shadcn/ui**: High-quality components built on Radix UI
+- **Lucide React**: Beautiful SVG icons
+- **CSS Variables**: Dynamic theming support
+
+### 🔥 **Backend Integration**
+- **Firebase**: Authentication and real-time database
+- **TanStack Query**: Server state management
+- **API Routes**: Next.js API endpoints
+
+### 🛠️ **Development Tools**
+- **ESLint + Prettier**: Code formatting and linting
+- **TypeScript**: Static type checking
+- **PostCSS**: CSS processing
 
 ## Project Structure
 
@@ -77,9 +100,18 @@ NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
 
-# API Configuration
-NEXT_PUBLIC_API_URL=http://localhost:5001
+# Infrastructure API
+NEXT_PUBLIC_API_URL=http://localhost:5001/mycompass-invest-dev/us-central1
 ```
+
+## Architecture Integration
+
+This web application integrates with:
+
+- **📦 @mycompass/invest-core**: Core algorithms and business logic
+- **☁️ mycompass-invest-infra**: Firebase Functions and cloud services
+- **🗄️ Firestore**: Real-time database for portfolio data
+- **🔐 Firebase Auth**: User authentication and sessions
 
 ## Deployment
 
