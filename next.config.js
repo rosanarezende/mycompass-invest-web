@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   images: {
     domains: ['images.unsplash.com'],
   },
   env: {
-    CUSTOM_KEY: process.env.CUSTOM_KEY,
+    FIREBASE_API_KEY: process.env.FIREBASE_API_KEY || '',
+    FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN || '',
+    FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID || '',
   },
 }
 
